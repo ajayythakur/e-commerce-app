@@ -1,0 +1,1061 @@
+table{
+    border: 1px solid black;
+}
+.link{
+    color: black;
+    text-decoration: none;
+
+}
+.link:hover{
+    color: black;
+    transition-duration: .5s;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.logout:hover{
+    color: black;
+    transition-duration: .5s;
+    font-size: 17px;
+    text-decoration: underline;
+    cursor: grab;
+}
+.topFlex {
+    display: flex;
+    justify-content: space-around;
+    /* font:  Proxima Nova; */
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    height: fit-content;
+    width: 100vw;
+    margin-top: 15px;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    margin: 20px auto;
+}
+
+.active-Class {
+    font-size: 20px;
+    color: orange;
+    text-decoration: none;
+}
+
+.notactive-Class {
+    color: black;
+    text-decoration: none;
+
+}
+
+.smallNav {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    margin: auto;
+    font-weight: 600;
+}
+
+.active2 {
+    text-decoration: underline;
+    color: #33A0FF;
+}
+
+.not-active2 {
+    text-decoration: none;
+    color: black;
+}
+
+.image {
+    height: 400px;
+    width: 90vw;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.slider {
+    height: 400px;
+    width: 90vw;
+}
+
+/* css for card in which data is shown */
+
+.item {
+    height: fit-content;
+    width: fit-content;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    border: 2px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dataCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: sans-serif;
+    /* font-weight: 100; */
+}
+
+.dataCard:hover {
+    height: 340px;
+    box-shadow: 5px 5px 15px grey;
+    margin: 10px;
+    box-sizing: content-box;
+    transition-duration: 0s;
+
+}
+
+.dataImg {
+    height: 30vh;
+    width: 200px;
+}
+
+.dataImg:hover {
+    height: 35vh;
+    width: 230px;
+    transition-duration: .5s;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.ratingImg {
+    height: 40px;
+    width: 80px;
+
+}
+
+/* css for add to card button */
+.dataCard button {
+    height: auto;
+    width: 200px;
+    margin: .5px;
+    font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: black;
+    color: white;
+}
+
+.dataCard button:hover{
+    background-color: whitesmoke;
+    color:black;
+    font-weight: lighter;
+    border: none;
+
+}
+
+/* css for profile page */
+.profile {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(233, 233, 235);
+    grid-template-columns: 2fr 3fr;
+    column-gap: 5px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.input {
+    height: 30px;
+    width: 200px;
+    background-color: rgb(219, 223, 224);
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.userDetail {
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 1;
+    letter-spacing: -1px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* css for cart page */
+
+.cart {
+    display: grid;
+    height: fit-content;
+    width: 90vw;
+    margin-left: 5vw;
+    background-color: whitesmoke;
+    grid-template-columns: 2fr 1fr;
+}
+
+.product {
+    display: grid;
+    height: fit-content;
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border: 1px solid orange;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 1;
+}
+
+.product img {
+    height: 170px;
+    width: 200px;
+    border: 1px solid grey;
+}
+
+.qty{
+    width: 30px;
+}
+
+.rmvBtn {
+    margin-top: 100px;
+    border: none;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.rmvBtn:hover {
+    background-color: red;
+}
+
+.pay-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pay-side button {
+    height: 25px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.pay-side button:hover {
+    background-color: lightgreen;
+    box-shadow: 2px 2px 3px solid lightgreen;
+}
+
+.cartAuth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* css for register and login form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 90vw;
+    border: 1px solid lightgrey;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 1;
+    margin-left: 5vw;
+    box-shadow: 5px 5px 30px lightcoral;
+    background-color: rgb(233, 233, 235);
+
+}
+
+.form input {
+    height: 25px;
+    width: 200px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form button {
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+
+}
+
+/* css for payment page */
+.payment{
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 3px 3px 7px cornflowerblue;
+}
+
+/* css for infoComp like shipping refund support */
+
+.info {
+    height: 140px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* background-color: #33A0FF; */
+    column-gap: 5px;
+}
+
+.subInfo {
+    height: 150px;
+    width: 25vw;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.subInfo img {
+    height: 50px;
+    width: 15vw;
+    border-radius: 10%;
+}
+
+
+/* css for footer */
+
+.footer {
+    display: grid;
+    height: fit-content;
+    width: 95vw;
+    margin-right: auto;
+    /* background-color: #33A0FF; */
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    border: 1px solid;
+    background-color: rgb(233, 233, 235);
+}
+
+.footer1 {
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    width: 24vw;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.footerText {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer2 {
+    display: flex;
+}
+
+.card2 {
+    height: fit-content;
+    width: 15vw;
+    font-size: 12px;
+
+}
+
+.foooter2Text {
+    font-weight: 550;
+    font-size: 18px;
+
+}
+
+/* css for product details page */
+.prod_img{
+    height: 400px;
+    width: 100%;
+}
+
+.prod_box{
+    display: grid;
+    height: 400px;
+    width: 90%;
+    margin:auto;
+    /* background-color: aqua; */
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid ;
+    box-shadow: 3px 3px 10px black;
+}
+
+.prod_details{
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    justify-content: center;
+    border: 1px solid ;
+    /* border-radius: 5px; */
+}
+
+.prod_details button{
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight:lighter;
+}
+.prod_details button:hover{
+    background-color:orange;
+    color:black;
+    border: none;
+    cursor: grab;
+}
+
+.prod_rating{
+    height: 20px;
+}
+.prod_details span{
+    text-align: center;
+}
+
+.prod_details div{
+text-align: center;
+font-family: sans-serif;
+letter-spacing: 1px;
+line-height: 25px;
+font-size: 14px;
+}
+
+.about_prod{
+    display: grid;
+    /* background-color: antiquewhite; */
+    height: fit-content;
+    width: 90%;
+    /* border: 1px solid; */
+    margin-top: 20px;
+    margin-left: 5%;
+    grid-template-rows: 0fr 1fr 1fr;
+}
+
+.about_prod h3{
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+
+}
+.about_prod h2{
+    font-family: sans-serif;
+    font-weight: lighter;
+
+}
+
+.about_prod div{
+    font-weight: lighter;
+
+}
+
+.related_product{
+display: flex;
+width: 90vw;
+flex-direction: row;
+overflow: scroll;
+}
+
+.related_product::-webkit-scrollbar{
+    display: none;
+}
+
+/* css for recent products */
+.recent_product{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    margin-left: 4%;
+    overflow: scroll;
+}
+.recentCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin-left: 5px;
+    /* font-weight: 100; */
+}
+
+.recentCard:hover {
+    height: 340px;
+    box-shadow: 5px 5px 15px grey;
+    margin: 10px;
+    box-sizing: content-box;
+    transition-duration: 0s;
+
+}
+
+.home h3{
+    margin-left: 4%;
+    background-color: black;
+    color: white;
+    margin-right: 4%;
+    font-weight: lighter;
+}
+.recentCard button {
+    height: auto;
+    width: 200px;
+    margin: .5px;
+    font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: black;
+    color: white;
+}
+
+.recentCard button:hover{
+    background-color: orange;
+    color:black;
+    font-weight: lighter;
+    border: none;
+
+}
+
+/* css for store page */
+
+.store img{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Media Query Starts from here */
+
+@media (min-width:320px) and (max-width:480px) {
+.topFlex {
+display: flex;
+margin-top: 8px;
+justify-content:space-between;
+/* font:  Proxima Nova; */
+/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+height: fit-content;
+width: 480px;
+border-bottom: 1px solid gainsboro;
+box-shadow: 0px 0px 4px 0px;
+font-size: 15px;
+overflow-y: scroll;
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    margin: 20px auto;   
+}
+.slider { 
+    height: 200px;
+    width: 480px;
+}
+.image {
+    height: 200px;
+    width: 480px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.info {
+    height: 100px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #33A0FF; */
+    column-gap: 5px;
+}
+.subInfo {
+    height: 170px;
+    width: 160px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.subInfo img {
+    height: 30px;
+    width: 50px;
+    border-radius: 10%;
+}
+
+/* css for recent products */
+.recent_product{
+    display: flex;
+    width: 480px;
+    flex-direction: row;
+    /* margin-left: 4%; */
+    overflow: scroll;
+}
+.recentCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin-left: 5px;
+    /* font-weight: 100; */
+}
+
+.recentCard:hover {
+    height: 300px;
+    box-shadow: 5px 5px 15px grey;
+    margin: 10px;
+    box-sizing: content-box;
+    transition-duration: 0s;
+
+}
+
+.home h3{
+    margin-left: 0%;
+    width: 480px;
+    background-color: black;
+    color: white;
+    /* margin-right: 4%; */
+    font-weight: lighter;
+}
+/* css for footer */
+
+.footer {
+    display: grid;
+    height: fit-content;
+    width: 480px;
+    /* margin-right: auto; */
+    /* background-color: #33A0FF; */
+    grid-template-rows: 1fr 1fr;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: rgb(233, 233, 235);
+}
+
+.footer1 {
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    width: 160px;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.footerText {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer2 {
+    display: flex;
+}
+
+.card2 {
+    height: fit-content;
+    width: 80px;
+    font-size: 12px;
+    overflow-x: scroll;
+}
+
+.foooter2Text {
+    font-weight: 550;
+    font-size: 18px;
+}
+
+/* css for cart page */
+
+.cart {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 480px;
+    background-color: whitesmoke;
+    /* grid-template-rows: 2fr 1fr; */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 400px;
+    /* grid-template-columns: 1fr 1fr; */
+    background-color: white;
+    border: 1px solid orange;
+    /* margin-left: 90px; */
+    margin-top: 5px;
+    margin-left: 40px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.product img {
+    height: 200px;
+    width:200px;
+    border: 1px solid grey;
+    margin-top: 3px;
+}
+
+.product div button {
+    margin-top: 10px;
+    border: none;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.product div button:hover {
+    background-color: red;
+}
+
+.pay-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pay-side button {
+    height: 30px;
+    width: 480px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.pay-side button:hover {
+    background-color: lightgreen;
+    box-shadow: 2px 2px 3px solid lightgreen;
+}
+
+.cartAuth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+
+}
+
+table{
+    width: 480px;
+}
+
+/* css for register and login form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 450px;
+    border: 1px solid lightgrey;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    box-shadow: 5px 5px 30px lightcoral;
+    background-color: rgb(233, 233, 235);
+
+}
+
+/* css for card in which data is shown */
+.item {
+    height: fit-content;
+    width: 470px;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    border:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dataCard {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: sans-serif;
+    /* font-weight: 100; */
+}
+
+.dataCard:hover {
+    height: 340px;
+    box-shadow: 5px 5px 15px grey;
+    margin: 10px;
+    box-sizing: content-box;
+    transition-duration: .5s;
+
+}
+
+.dataImg {
+    height: 30vh;
+    width: 200px;
+}
+
+.dataImg:hover {
+    height: 35vh;
+    width: 230px;
+    transition-duration: 1s;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.ratingImg {
+    height: 40px;
+    width: 80px;
+
+}
+
+/* css for add to card button */
+.dataCard button {
+    height: auto;
+    width: 200px;
+    margin: .5px;
+    font-family: Gilroy, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: black;
+    color: white;
+}
+
+/* css for profile page */
+.profile {
+    display: grid;
+    height: 100vh;
+    width: 480px;
+    background-color: rgb(233, 233, 235);
+    grid-template-columns: 2fr 3fr;
+    column-gap: 5px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.input {
+    height: 30px;
+    width: 200px;
+    background-color: rgb(219, 223, 224);
+    border: none;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.userDetail {
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 1;
+    letter-spacing: -1px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* css for payment page */
+.payment{
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    box-shadow: 3px 3px 5px;
+}
+
+/* css for product details page */
+.prod_img{
+    height: 400px;
+    width: 100%;
+}
+
+.prod_box{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 450px;
+    margin-left: 25px;
+    /* background-color: aqua; */
+    /* grid-template-rows: 1fr 1fr; */
+    border: 1px solid ;
+    box-shadow: 3px 3px 10px black;
+}
+
+.prod_details{
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+    justify-content: center;
+    border: 1px solid ;
+    /* border-radius: 5px; */
+}
+
+.prod_details button{
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight:lighter;
+}
+.prod_details button:hover{
+    background-color:orange;
+    color:black;
+    border: none;
+    cursor: grab;
+}
+
+.prod_rating{
+    height: 20px;
+}
+.prod_details span{
+    text-align: center;
+}
+
+.prod_details div{
+text-align: center;
+font-family: sans-serif;
+letter-spacing: 1px;
+line-height: 25px;
+font-size: 14px;
+}
+
+.about_prod{
+    display: grid;
+    /* background-color: antiquewhite; */
+    height: fit-content;
+    width: 480px;
+    /* border: 1px solid; */
+    margin-top: 20px;
+    margin-left: 5%;
+    grid-template-rows: 0fr 1fr 1fr;
+}
+
+.about_prod h3{
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.related_product{
+    display: flex;
+    width: 460px;
+    flex-direction: row;
+    overflow: scroll;
+}
+    
+.related_product::-webkit-scrollbar{
+        display: none;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-badge .ant-badge-count {
+    z-index: auto;
+    min-width: 20px;
+    height: 20px;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-align: center;
+    background: #ff4d4f;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #ffffff;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.store img{
+    height: 400px;
+    width:480px;
+}
+
+}
