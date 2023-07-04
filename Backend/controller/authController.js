@@ -2,7 +2,7 @@ const {userSchema}=require("../models/userModel");
 const {orderSchema}=require("../models/orderModel");
 const {hashPassword,comparePassword}= require("../helper/authHelper");
 const jwt=require("jsonwebtoken");
-const secret="QWERTY";
+const env=require('dotenv');
 
 const orderController=async(req,res)=>{
     try {
@@ -107,7 +107,7 @@ const loginController=async(req,res)=>{
         }
 
         //if password is matched generating the token
-        const token=await jwt.sign({_id:user._id},secret,{expiresIn:"1d"});
+        const token=await jwt.sign({_id:user._id},process.env.SECRET,{expiresIn:"1d"});
         res.status(200).send({
             success:true,
             message:"Login Successfully",
@@ -122,7 +122,6 @@ const loginController=async(req,res)=>{
         })
 
     } catch (error) {
-        console.log(error);
         res.status(500).send({
             success:false,
             message:"Error in Login",

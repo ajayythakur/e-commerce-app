@@ -3,7 +3,9 @@ const app=express();
 const route=require("./routes/authRoute");
 const  connect  = require("./config/db");
 const cors=require("cors");
+const env=require('dotenv');
 
+env.config();
 
 //Middlewares
 app.use(cors({origin:"*"}))
@@ -17,7 +19,8 @@ app.get("/",(req,res)=>{
     res.send("<h1>Welcome</h1>")
 })
 
-app.listen(8080,async()=>{
+
+app.listen(process.env.PORT,async()=>{ 
     try {
        await connect();
        console.log("Connected to database");
@@ -25,5 +28,5 @@ app.listen(8080,async()=>{
     console.log("Error in connection");
     }
 
-    console.log(`App is running on Port 8080`);
-})
+    console.log(`App is running on Port ${process.env.PORT}`);
+}) 

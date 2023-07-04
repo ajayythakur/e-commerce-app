@@ -12,7 +12,6 @@ const App = () => {
   // const [auth,setAuth]=useAuth();
   return (
     <div>
-      {/* <pre>{JSON.stringify(auth,null,4)}</pre> */}
 <TopMostComp/>
 <Routing/>
 <Footer/>

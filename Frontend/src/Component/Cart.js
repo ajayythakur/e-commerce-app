@@ -6,8 +6,36 @@ import toast from 'react-hot-toast'
 import { useOrder } from './context/order';
 import { Link } from 'react-router-dom';
 
+   //calculating total amount of cart items
+   const TotalPrice = () => {
+    const [cart, setCart] = useCart();
+    console.log(cart)
+    try {
+        let total = 0;
+            // eslint-disable-next-line
+        cart?.map((item) => {
+            
+            //removes the , in the price which we getting form API and converts it into number;
+            // parseFloat("2,299.00".replace(/,/g, ''));
+            // let price = parseFloat(item.price.replace(/,/g, ''));
+            let price = item.price;
+            console.log("Price of items are", price)
+            total += price;
+            console.log("Total of Cart items is", total)
+        })
 
-const Cart = () => {
+        return total 
+            .toLocaleString("en-IN", {
+                style: "currency",
+                currency: "INR"
+            })
+
+    } catch (error) {
+        console.log("Error in Calculating", error);
+    }
+}
+
+ const Cart = () => {
     // eslint-disable-next-line
     const [auth, setAuth] = useAuth();
     // eslint-disable-next-line
@@ -52,32 +80,7 @@ const Cart = () => {
 // eslint-disable-next-line
     const navigate = useNavigate();
 
-    //calculating total amount of cart items
-    const totalPrice = () => {
-        try {
-            let total = 0;
-                // eslint-disable-next-line
-            cart?.map((item) => {
-                
-                //removes the , in the price which we getting form API and converts it into number;
-                // parseFloat("2,299.00".replace(/,/g, ''));
-                // let price = parseFloat(item.price.replace(/,/g, ''));
-                let price = item.price;
-                console.log("Price of items are", price)
-                total += price;
-                console.log("Total of Cart items is", total)
-            })
-
-            return total 
-                .toLocaleString("en-IN", {
-                    style: "currency",
-                    currency: "INR"
-                })
-
-        } catch (error) {
-            console.log("Error in Calculating", error);
-        }
-    }
+ 
     //deleting item
     const removeItem = (dataId) => {
         try {
@@ -130,17 +133,10 @@ const Cart = () => {
                 </div>
 
                 <div className='pay-side'>
-                    <h3>Total :-{totalPrice()} </h3>
+                    <h3>Total :-{TotalPrice()} </h3>
                     <div>
                         <Link to='/payment'>
-                            <button
-                                onClick={(e) => {
-                                    setOrder([...order, ...cart]);
-                                    // localStorage.setItem('order', JSON.stringify([...order, ...cart]))
-                                    toast.success("Item added to Cart")
-                                    console.log("Item Added to Cart")
-                                }}
-                            >Payment</button></Link>
+                            <button>Payment</button></Link>
                     </div>
                 </div>
             </div>
@@ -148,4 +144,4 @@ const Cart = () => {
     )
 }
 
-export default Cart
+export {Cart,TotalPrice}

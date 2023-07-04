@@ -571,6 +571,28 @@ overflow: scroll;
     width: 100vw;
 }
 
+.payment-gateway{
+width: 60%;
+height: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: auto;
+border: 1px solid white;
+box-shadow: 5px 6px 10px darkgray;
+background-color: whitesmoke;
+margin-bottom: 30px;
+} 
+.payment-gateway div input{
+height: 30px;
+width: fit-content;
+text-align: center;
+border: none;
+background-color: transparent;
+color: black;
+
+}
+
 /* Media Query Starts from here */
 
 @media (min-width:320px) and (max-width:480px) {

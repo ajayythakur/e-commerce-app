@@ -67,7 +67,7 @@ const Order = () => {
       <hr></hr>
      <h3> Make sure you are Logged in to see Order Details</h3>
 <hr></hr>
-      <table border='1px' width='100%'>
+      <table border='1px' width='70%' style={{margin:'auto'}}>
         {/* <thead> */}
         <th>Item Name</th>
         <th>Quantity</th>

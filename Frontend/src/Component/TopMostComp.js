@@ -32,7 +32,10 @@ const TopMostComp = () => {
             My Cart <Link className='link' to="/cart"><img src={carticon} alt='404' /></Link> &nbsp;&nbsp;
           </Badge>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link className='link' to="/order" >My Orders</Link>
+          {
+            !auth ? (<Link className='link' to="/order" >My Orders</Link>) : ("")
+          }
+          
         </div>
       </div>
       {

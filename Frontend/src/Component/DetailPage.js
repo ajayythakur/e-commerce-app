@@ -61,7 +61,8 @@ const DetailPage = () => {
               {
                 context && context.filter((item)=>item.catagory===category).map((data,index)=>{
                   return(
-                    <div className='dataCard'>{data.name}
+                    <div className='dataCard'>
+                    {data.name}
                     <img alt='404' src={data.image} className='dataImg' ></img>
                     <img alt='404' src={data.ratting} className='ratingImg'></img>
                     <div style={{textDecoration:'line-through',opacity:'0.5'}}> ₹{data.oPrice}</div>
